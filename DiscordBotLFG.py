@@ -42,7 +42,7 @@ async def on_message(message):
                 list.append(mem.name)
             else:
                 return
-    if "!LFG create" == message.content:
+    if "!LFG create".lower() == message.content.lower():
         if message.author.permissions.administrator == True
             if message.author == client.user:
                 return
